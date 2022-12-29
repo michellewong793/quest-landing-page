@@ -1,13 +1,4 @@
 
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -15,9 +6,11 @@
   align-items: center;
 }
 
-.background {
-  background-image: url("/backgroundConfetti.svg");
-  height:100rem;
+.container {
+  background-image: url("/questland2.svg");
+  background-size: cover;
+  height:212rem;
+  
 }
 
 .broughtToYouBy {
