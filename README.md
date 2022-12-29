@@ -1,16 +1,3 @@
-<img width="1075" alt="Screen Shot 2022-11-05 at 5 30 53 PM" src="https://user-images.githubusercontent.com/12700801/200162710-bf03e048-0db4-4e66-8a92-03a3c0ff8e2a.png">
-
-
-This is Quit Now, built at EthSF 2022. 
-It uses a few key things:
-1) Triangle Library for wallet abstraction for users who dont have wallets already
-2) Push Protocol Library for push notifications
-3) Solidity for the smart contract to hold tokens that are sent to the owner of the contract 
-
-It's a way you can support your friends, and also earn money if you hate your job. OR just think about living. 
-
-Check out this link for a video demo: 
-https://youtu.be/h_rn_TayAJI
 
 ## Getting Started
 
