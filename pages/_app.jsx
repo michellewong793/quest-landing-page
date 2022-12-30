@@ -2,12 +2,20 @@ import '../styles/globals.css'
 import Layout from "../components/layout";
 
 
+import {Lexend} from '@next/font/google';
 
-// If loading a variable font, you don't need to specify the font weight
+const lexend = Lexend({
+   subsets: ['latin'],
+  //  display: "fallback",
+  })
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
+  <main className={lexend.className}>
   <Component {...pageProps} />
+  </main>
   );
 }
 
