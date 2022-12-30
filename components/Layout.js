@@ -1,34 +1,37 @@
 import React from "react";
 import Link from "next/link";
-
-const linkStyle = {
-  marginRight: 35,
-  fontFamily: "Press Start 2P", 
-  textDecoration: "none",
-  color: "white",
-  fontSize: "2rem"
-};
+import {Press_Start_2P} from '@next/font/google';
 
 
-const header = {
-  padding: "1rem",
-  width: "100%",
-  height: "1rem",
-  color: "white",
-};
+
+// If loading a variable font, you don't need to specify the font weight
+const press = Press_Start_2P({
+   subsets: ['latin'],
+   weight: ['400'],
+   display: "fallback",
+  })
+
 
 const navContainer = {
-  fontFamily: "Press Start 2P"
-}
+  color: '#FFF6A5',
+  fontSize: "1.2rem",
+  marginTop: '0',
+  paddingTop: '4rem',
+  textAlign: 'right',
+};
+
+const navItem = {
+  padding:'3rem',
+};
 
 const Layout = () => {
   return (
-  <nav className={navContainer}>
-      <Link href="/">
-        <a>Developers</a>
+  <nav className={`${press.className}`} style = {navContainer}>
+      <Link href="/" style = {navItem}>
+        DEVELOPERS
       </Link>
-      <Link href="/pricing">
-        <a className="ml-2">Mission</a>
+      <Link href="/pricing" style = {navItem}>
+        MISSION
       </Link>
     </nav>
     
