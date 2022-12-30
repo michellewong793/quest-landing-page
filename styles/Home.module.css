@@ -1,23 +1,39 @@
 
+
+.container {
+  background-image: url("/iphone.svg");
+  background-size: cover;
+  height: 220rem;
+
+}
+
+
+ @media (min-width: 1000px) {
+  .container {
+    width: 100%;
+      background-image: url("/morePink.svg");
+      background-size: cover;
+    }
+ }
+
+ .title {
+font-family: 'Press Start 2P',
+  cursive;
+  size: 10rem;
+ }
+/* 
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.container {
-  background-image: url("/lessPink.svg");
-  background-size: cover;
-  height:216rem;
-  
-}
 
-.broughtToYouBy {
-  margin-top: 10rem;
-  color: white;
-  font-size:1.5rem;
-}
+
+
+
 .largeContainer {
   position: absolute;
   top: 15rem;
@@ -54,14 +70,6 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 98px;
-  color: black;
-  animation: pulse infinite; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
 
 @keyframes pulse {
   from {
@@ -80,175 +88,4 @@
 .pulse {
   animation-name: pulse;
   animation-timing-function: ease-in-out;
-}
-
-.title,
-.description {
-  text-align: center;
-
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.powerBack {
-  font-family: Alata;
-  font-size: 48px;
-  text-align: center;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  font-weight: light;
-}
-
-.makeMoney {
-  font-family: Alata;
-  font-size: 28px;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: light;
-  color: #d017cd;
-}
-
-.paragraph { 
-  font-family: Alata;
-  text-align: center;
-
-}
-
-.button {
-  background-color: #d017cd;
-  border-radius: 9px;
-  padding: 1rem;
-  border: none;
-  color: white;
-  font-family: Alata;
-  margin: 1rem;
-  width:10rem;
-}
-
-.sendEthButton {
-  background-color: #d017cd;
-  border-radius: 9px;
-  padding: 1rem;
-  border: none;
-  color: white;
-  font-family: Alata;
-  width:20rem;
-  margin-top: 1rem;
-}
-
-.button:hover{
-  background-color: #880886;
-}
-
-.flexRow {
-  display: flex;
-  flex-direction: row;
-  width:fit-content;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-
-.technologiesRow {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-left:auto;
-  margin-right:auto;
-  font-size:1.5rem;
-}
-
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-.pinkTextColor {
-  color: #d017cd;
-}
-
-.tinyHeading {
-  font-size: 14px;
-  font-family: Alata;
-  text-align: center
-}
-
-.form {
-  margin-top:3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.input {
-  height:3rem;
-  font-size: 1rem;
-  width:20rem;
-  border: 1px solid black;
-  border-radius: 9px;
-  padding: 0.5rem;
-}
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
