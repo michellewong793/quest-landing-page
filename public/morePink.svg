@@ -292,7 +292,7 @@
 <linearGradient id="paint0_linear_48_520" x1="720" y1="0.000100149" x2="2644.88" y2="868.737" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF6BE7"/>
 <stop offset="0.890625" stop-color="#FFD5B7"/>
-<stop offset="1" stop-color="#FFF6A5"/>
+<stop offset="1" stop-color="#DAF58C"/>
 </linearGradient>
 <linearGradient id="paint1_linear_48_520" x1="386.923" y1="3255.44" x2="384.2" y2="3253.99" gradientUnits="userSpaceOnUse">
 <stop offset="0.598958" stop-color="#A044FF"/>

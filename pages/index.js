@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
@@ -12,11 +13,6 @@ const lexend = Lexend({
    subsets: ['latin'],
   })
 
-
-
-
-
-
 export default function Home() {
   return (
     <>
@@ -28,13 +24,26 @@ export default function Home() {
     <div className={styles.container}>
      <Nav/>
 
-    <div>
+    <div className={styles.landingContainer}>
       <h1 className={`${lexend.className} ${styles.header}`}>
-      Quest is the world’s first ecosystem for community-driven crowdsourcing and monetization of data. 
+      Community-driven crowdsourcing and monetization of data. 
       </h1>
       <p className={styles.subheader}>
-      We believe that individuals should have control over their own data and have the opportunity to profit from it. Our mission is to empower individuals to profit from their own data by providing a platform for them to securely and safely share their data with companies who need it.  By empowering individuals to profit from their own data, we aim to create a more equitable and sustainable economy where individuals are fairly compensated for their contributions.
-      </p>
+  Solve collective knowledge problems with the innovation of zero knowledge proofs, and AI.      </p>
+
+  <br/>
+      <div className={styles.smallFlexColumn}>
+      <Link href="#active-quests" className={styles.activeQuestTextBox}>You have (1) active quest!</Link>
+      <br/>
+      <Link href="#active-quests" className={styles.activeQuestText}>Start Now</Link>
+      <br/>
+      <img src="/downArrow.svg" className={styles.arrowSvg}/>
+      </div>
+
+    <div className={styles.questContainer}>
+
+      
+    </div>
     </div>  
     </div>
     </>

@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import Layout from "../components/layout";
 import {Press_Start_2P, Lexend} from '@next/font/google'
 
 
