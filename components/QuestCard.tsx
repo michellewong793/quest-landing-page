@@ -1,19 +1,24 @@
-import Link from "next/link";
 import React from "react";
 import styles from "../styles/QuestCard.module.css"
+import {Lexend} from '@next/font/google'
+
 
 /** joinedClassName explanation: The background image is determined by the classname we pass in. The classnames are conjoined 
  * with the CSS for the card container as a component.
  */
 
-const QuestCard = ({ backgroundClassName, logoImage, description, descriptionClassName, buttonClassName, buttonText }) => {
-  const joinedClassName = [styles.cardContainer, backgroundClassName].join(' ')
+const lexend = Lexend({subsets: ["latin"],weight: "300"})
+
+const QuestCard = ({ cardName, logoImage, description, buttonText}) => {
 
   return (
-    <div className={joinedClassName}>
+    <div className={cardName}>
         <img src={logoImage} className={styles.logoImage} />
-        <p className={styles.descriptionClassName}>{description}</p>
-        <a className={styles.buttonClassName}>{buttonText}</a>
+        <p>{description}</p>
+        <br />
+        <button className={styles.button}>
+        <a className={lexend.className}>{buttonText}</a>
+        </button>
     </div>
   );
 };

@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+import QuestCard from "../components/QuestCard";
+import cardStyles from "../styles/QuestCard.module.css";
 
 import {Lexend} from '@next/font/google';
 
@@ -40,10 +42,11 @@ export default function Home() {
       <img src="/downArrow.svg" className={styles.arrowSvg}/>
       </div>
 
+
     <div className={styles.questContainer}>
-      <QuestCard />
-      <QuestCard />
-      
+      <QuestCard cardName={cardStyles.teapot} logoImage={"/teapot-logo.svg"} description={"Teapot is an anonymous company review site."} buttonText={"Spill the Tea"}/>
+      <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"The next quest is coming soon...."} buttonText={"Propose the next Quest"}/>
+
     </div>
     </div>  
     </div>
