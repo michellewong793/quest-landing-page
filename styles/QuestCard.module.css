@@ -2,6 +2,10 @@
     background-image: url("/cat_background.svg")
 }
 
+.comingSoon {
+    background-image: url("/chessboard.svg")
+}
+
 /**Mobile Container**/
 .cardContainer {
     padding: 40px;

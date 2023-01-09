@@ -29,7 +29,7 @@ export default function Home() {
       Community-driven crowdsourcing and monetization of data. 
       </h1>
       <p className={styles.subheader}>
-  Solve collective knowledge problems with the innovation of zero knowledge proofs, and AI.      </p>
+    We build technology to empower communities to leverage and monetize their data together.     </p>
 
   <br/>
       <div className={styles.smallFlexColumn}>
@@ -41,7 +41,8 @@ export default function Home() {
       </div>
 
     <div className={styles.questContainer}>
-
+      <QuestCard />
+      <QuestCard />
       
     </div>
     </div>  

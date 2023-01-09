@@ -3,15 +3,16 @@
 .container {
   background-image: url("/background_mobile.svg");
   background-size: cover;
-  height:195rem;
+  height:fit-content;
 }
 
 
  @media (min-width: 1000px) {
   .container {
     width: 100%;
-      background-image: url("/morePink.svg");
+      background-image: url("/background_desktop.svg");
       background-size: cover;
+      height:fit-content;
     }
  }
 
@@ -179,7 +180,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
+    padding-left:4rem;
+    padding-right:4rem;
     font-size: 1rem;
     color: #DAF58C;
   }
