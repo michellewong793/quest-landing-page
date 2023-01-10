@@ -25,7 +25,6 @@ export default function Home() {
     </Head>
     <div className={styles.container}>
      <Nav/>
-
     <div className={styles.landingContainer}>
       <h1 className={`${lexend.className} ${styles.header}`}>
       Community-driven crowdsourcing and monetization of data. 
@@ -39,14 +38,15 @@ export default function Home() {
       <br/>
       <Link href="#active-quests" className={styles.activeQuestText}>Start Now</Link>
       <br/>
-      <img src="/downArrow.svg" className={styles.arrowSvg}/>
+      <img src="/down_arrow_purple.svg" className={styles.arrowSvg}/>
       </div>
 
 
+    <div className={styles.questBlock}> 
     <div className={styles.questContainer}>
       <QuestCard cardName={cardStyles.teapot} logoImage={"/teapot-logo.svg"} description={"Teapot is an anonymous company review site."} buttonText={"Spill the Tea"}/>
-      <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"The next quest is coming soon...."} buttonText={"Propose the next Quest"}/>
-
+      <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"What will the next quest be? Propose one below."} buttonText={"Propose the next Quest"}/>
+    </div>
     </div>
     </div>  
     </div>

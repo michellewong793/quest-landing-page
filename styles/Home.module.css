@@ -10,9 +10,8 @@
  @media (min-width: 1000px) {
   .container {
     width: 100%;
-      background-image: url("/background_desktop.svg");
+      background-image: url("/background_desktop_gradient.svg");
       background-size: cover;
-      height:fit-content;
     }
  }
 
@@ -76,7 +75,7 @@
  }
 
  .link {
-  color: #DAF58C;
+  color: #3A1D8B;
   font-size:1rem;
  }
 
@@ -87,7 +86,7 @@
  }
 
  .activeQuestText {
-  color: #DAF58C;
+  color: #3A1D8B;
   font-size:0.5rem;
   animation-name: pulse;
   animation-duration: 2s;
@@ -141,7 +140,8 @@
   .activeQuestTextBox {
    font-size:1rem;
    margin-top:3rem;
-  }
+  }  
+
  }
 
  @media(min-width: 500px) {
@@ -182,12 +182,12 @@
     padding-left:4rem;
     padding-right:4rem;
     font-size: 1rem;
-    color: #DAF58C;
+    color: #3A1D8B;
   }
  }
 
 .title {
-    color: #EF83F8;
+    color: #3A1D8B;
     font-size: "4rem";
 }
 
@@ -202,7 +202,7 @@ padding: 2rem;
 }
 
 .header {
-  color: #EF83F8;
+  color: #3A1D8B;
   font-size: 1.3rem;
   text-align: center;
   position: relative;
@@ -211,7 +211,7 @@ padding: 2rem;
 
 @media(min-width: 400px) {
   .header {
-    color: #EF83F8;
+    color: #3A1D8B;
     font-size: 2.5rem;
     text-align: left;
     position: relative;
@@ -220,7 +220,7 @@ padding: 2rem;
 }
 
 .subheader {
-  color: #FFFFFF;
+  color: #3A1D8B;
   font-size: 1rem;
   text-align:center;
   font-weight: 300;
@@ -228,25 +228,51 @@ padding: 2rem;
 
 @media(min-width: 400px) {
   .subheader {
-    color: #FFFFFF;
+    color: #3A1D8B;
     font-size: 1.5rem;
     font-weight: 300;
     text-align:left;
   }
 }
 
+.questBlock {
+  height: fit-content;
+}
+
 .questContainer {
-  margin-top:15rem;
+  margin-top:5rem;
   display: flex;
   flex-direction: column;
   justify-content:center;
 }
 
+.activeQuestsHeader {
+  font-size:1.5rem;
+  color: #FFFFFF;
+  background-color: #3A1D8B;
+  padding: 1rem;
+  width:fit-content;
+  border-radius: 9px;
+  margin:auto;
+  animation: pulse;
+  animation-timing-function: infinite;
+  animation-duration: 2s;
+}
+
+@media(min-width:400px) {
+  .activeQuestsHeader {
+    font-size: 40px;
+    margin-top:10rem;
+  }
+}
 @media(min-width:400px){
 .questContainer {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content:space-evenly;
+  width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 

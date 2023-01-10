@@ -1,7 +1,8 @@
 .teapot {
     background-image: url("/cat_background.svg");
     background-size: cover;
-    height:fit-content;
+    height: 420px;
+    box-shadow: 20px 20px 10px #F083F9;
 }
 
 .teapot p {
@@ -19,6 +20,12 @@
     border: 3px solid black;
 }
 
+@media(min-width: 400px){
+    .button {
+        width: 100%
+    }
+}
+
 .teapot a {
     font-size: 16px;
 }
@@ -26,7 +33,7 @@
 .comingSoon {
     background-image: url("/chessboard.svg");
     background-size: cover;
-    height:fit-content;
+    height: 420px;
 }
 
 .comingSoon p {
@@ -42,7 +49,13 @@
         width: 192px;
         border-radius: 9px;
         padding-left:none;
-        border: none;
+        border: 3px solid #4B4B4B;
+}
+
+@media(min-width: 400px){
+    .comingSoon button {
+        width: 340px
+    }
 }
 
 .teapot, .comingSoon {
@@ -59,6 +72,12 @@
     width: 190px;
     border-radius: 9px;
     border: 4px solid black;
+}
+
+@media(min-width: 400px){
+    .logoImage {
+        width: 340px
+    }
 }
 
 /** Desktop Teapot*/ 
