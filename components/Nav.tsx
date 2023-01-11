@@ -24,14 +24,14 @@ export default function Nav() {
 
         { mobileNavActive ? 
         <div className={styles.mobileNavBarLinkContainer}>        
-        <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={styles.mobileNavBarLink}>About Us</Link>
+        <Link href="/about" className={styles.mobileNavBarLink}>About Us</Link>
         <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={styles.mobileNavBarLink}>Developers</Link>
         <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={styles.mobileNavBarLink}>Get Updates</Link>
         </div> :  
         <div className={styles.navBar}>
        <img src="/Quest_Pink_Logo.svg" className={styles.desktopLogo}/>
          <>
-        <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={navLinkClass}>About Us</Link>
+        <Link href="/about" className={navLinkClass}>About Us</Link>
         <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={navLinkClass}>Developers</Link>
         <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={navLinkClass}>Get updates!</Link>
 
