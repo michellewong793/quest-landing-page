@@ -52,8 +52,8 @@ export default function Home() {
 
     <div className={styles.proposalContainer}>
       <h1 className={styles.proposalText}> Submit a Proposal </h1> 
-      <p> Want to learn more about Quest? Inquire here to start building for and with your community, business, or organization. </p>
-      <button> Submit Proposal </button>
+      <p> Intrigued? We promise you've never seen team like this. Inquire here to propose a quest for you and your community, business, or organization. </p>
+      <button className={`${lexend.className} ${styles.proposalButton}`}> Submit Proposal </button>
     </div>
 
     </div>
