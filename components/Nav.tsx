@@ -17,7 +17,7 @@ export default function Nav() {
         <img
           onClick={() => setNavActive(!mobileNavActive)}
           className={styles.mobileNavBar}
-          src={"/hamburger_purple.svg"}
+          src={"/hamburger_pink.svg"}
         >
         </img>
         </div>

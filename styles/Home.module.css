@@ -15,26 +15,30 @@
     }
  }
 
+
+.waveImage {
+max-width:100%;
+}
  /** Css for switching mobile and desktop backgrounds at breakpoints for desktop */ 
  .bottomBackground {
   display: none;
-  bottom: -105rem;
-  position: absolute;
-  width:100%;
  }
 
  .bottomBackgroundMobile {
   display: block;
   position: absolute;
-  bottom: -105rem;
+  bottom: -115rem;
   width:100%;
+ }
+
+ @media(min-width:425px){
+  .bottomBackgroundMobile {
+    bottom: -135rem;
+  }
  }
 
  @media(min-width:768px) {
   .bottomBackground {
-    display: block;
-    bottom: -100rem;
-    
   }
   .bottomBackgroundMobile {
     display: none;
@@ -45,9 +49,6 @@
   .bottomBackground {
     bottom: -85rem;    
   }
-  .bottomBackgroundMobile {
-    display: none;
-  }
  }
 
  @media(min-width:1440px) {
@@ -57,7 +58,6 @@
  }
  .proposalContainer {
   position: relative;
-  bottom:-10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,28 +66,12 @@
   text-align:center;
  }
 
- @media(min-width:768px){
- .proposalContainer {
-  bottom:-7rem;
- }
-}
-@media(min-width:1024px){
-  .proposalContainer {
-   bottom:-13rem;
-  }
- }
-
- @media(min-width:1440px){
-  .proposalContainer {
-   bottom:-15rem;
-  }
- }
-
 
  .proposalContainer p {
-  color: white;
+  color:#6900E9;
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 0;
  }
 
 
@@ -117,6 +101,7 @@
 @media(min-width:768px){
   .proposalButton {
     font-size:1rem;
+    width:40%;
   }
 }
 
@@ -130,13 +115,13 @@
 }
 
  .proposalText {
-  color: #FD39FF;
-  font-size: 2rem;
+  color: #3A1D8B;
+  font-size: 1.5rem;
  }
 
  @media(min-width:1024px){
   .proposalText {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
  }
 
@@ -192,6 +177,10 @@
   60% {transform: translateY(-7px);} 
 } 
 
+.navLink {
+  color: #FD39FF;
+}
+
  .navLink:hover {
   text-decoration: underline;
   animation: bounce;
@@ -212,8 +201,8 @@
  }
 
  .activeQuestText {
-  color: #F083F9;
-  font-size:0.5rem;
+  color: #FD39FF;
+  font-size:0.75rem;
   animation-name: pulse;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -265,7 +254,7 @@
  @media(min-width: 500px) {
   .activeQuestTextBox {
    font-size:1rem;
-   margin-top:3rem;
+   margin-top:6rem;
   }  
 
  }
@@ -353,7 +342,7 @@ padding: 2rem;
 }
 
 .subheader {
-  color: #3A1D8B;
+  color: #6900E9;
   font-size: 1rem;
   text-align:center;
   font-weight: 300;
@@ -361,7 +350,6 @@ padding: 2rem;
 
 @media(min-width: 768px) {
   .subheader {
-    color: #3A1D8B;
     font-size: 1.5rem;
     font-weight: 300;
     text-align:left;

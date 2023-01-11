@@ -23,8 +23,7 @@ export default function Home() {
         <meta name="description" content="Quest is the world's first enterprise tool for crowdsourcing and monetizing data with individuals through the power of Artifical intelligence and zero knoweldge proofs." />
         <link rel="icon" href="/favicon.ico" />
     </Head>
-    <img src={"/Curve-2.svg"} className={styles.bottomBackground}/>
-    <img src={"/mobile_bottom.svg"} className={styles.bottomBackgroundMobile}/>
+
     <div className={styles.container}>
      <Nav/>
     <div className={styles.landingContainer}>
@@ -34,7 +33,7 @@ export default function Home() {
       <p className={styles.subheader}>
     We build technology to empower communities to leverage and monetize their data together.     </p>
 
-  <br/>
+      <br/>
       <div className={styles.smallFlexColumn}>
       <Link href="#firstQuest" className={styles.activeQuestTextBox}>You have (1) active quest!</Link>
       <br/>
@@ -45,20 +44,22 @@ export default function Home() {
 
 
     <div className={styles.questBlock}> 
-    <div className={styles.questContainer} id="firstQuest">
-      <QuestCard cardName={cardStyles.teapot} logoImage={"/teapot-logo.svg"} description={"Teapot is an anonymous company review site."} buttonText={"Spill the Tea"}/>
-      <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"What will the next quest be? Propose one below."} buttonText={"Propose the next Quest"}/>
-    </div>
+      <div className={styles.questContainer} id="firstQuest">
+        <QuestCard cardName={cardStyles.teapot} logoImage={"/teapot-logo.svg"} description={"Teapot is an anonymous company review site."} buttonText={"Spill the Tea"}/>
+        <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"What will the next quest be? Propose one below."} buttonText={"Propose the next Quest"}/>
+      </div>
 
-    <div className={styles.proposalContainer}>
-      <h1 className={styles.proposalText}> Submit a Proposal </h1> 
-      <p> Intrigued? We promise you've never seen team like this. Inquire here to propose a quest for you and your community, business, or organization. </p>
-      <button className={`${lexend.className} ${styles.proposalButton}`}> Submit Proposal </button>
-    </div>
+      <div className={styles.proposalContainer}>
+        <h1 className={styles.proposalText}> Submit a Proposal </h1> 
+        <p> Intrigued? Inquire here to propose a quest for you and your community, business, or organization. </p>
+        <button className={`${lexend.className} ${styles.proposalButton}`}> Contact Us </button>
+      </div>
 
     </div>
 
     </div>  
+    <img src="/waves.svg" className={styles.waveImage}/>
+
     </div>
     </>
   );
