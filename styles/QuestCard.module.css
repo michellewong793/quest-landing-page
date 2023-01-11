@@ -10,6 +10,7 @@
     background-color: #F0E4FF;
     padding: 1rem;
     border-radius: 9px;
+    border: 3px solid black;
 }
 
 
@@ -33,6 +34,7 @@
     background-image: url("/chessboard.svg");
     background-size: cover;
     height: 420px;
+    box-shadow: 20px 20px 10px #F083F9;
 }
 
 .comingSoon p {
@@ -40,6 +42,7 @@
     background-color: #E4E4E4;
     padding: 1rem;
     border-radius: 9px;
+    border: 3px solid black;
 }
 
 .comingSoon button {
@@ -48,8 +51,14 @@
         width: 192px;
         border-radius: 9px;
         padding-left:none;
-        border: 3px solid #4B4B4B;
+        border: 3px solid black;
 }
+
+.comingSoon button:hover{
+    background-color: #4B4B4B;
+    color: white;
+}
+
 
 @media(min-width: 400px){
     .comingSoon button {

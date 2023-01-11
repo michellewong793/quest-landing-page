@@ -34,11 +34,11 @@ export default function Home() {
 
   <br/>
       <div className={styles.smallFlexColumn}>
-      <Link href="#active-quests" className={styles.activeQuestTextBox}>You have (1) active quest!</Link>
+      <Link href="#firstQuest" className={styles.activeQuestTextBox}>You have (1) active quest!</Link>
       <br/>
       <Link href="#firstQuest" className={styles.activeQuestText}>Start Now</Link>
       <br/>
-      <img src="/downArrow.svg" className={styles.arrowSvg}/>
+      <img src="/pinkArrow.svg" className={styles.arrowSvg}/>
       </div>
 
 

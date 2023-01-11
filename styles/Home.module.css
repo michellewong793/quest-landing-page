@@ -10,7 +10,7 @@
  @media (min-width: 1000px) {
   .container {
     width: 100%;
-      background-image: url("/background_desktop_gradient.svg");
+      background-image: url("/DesktopBackgroundWithStars.svg");
       background-size: cover;
     }
  }
@@ -72,7 +72,7 @@
   animation: bounce;
   animation-duration: 0.75s;
   animation-timing-function: ease;
-  color: #860087;
+  color: #6900E9;
  }
 
  .link {
@@ -87,7 +87,7 @@
  }
 
  .activeQuestText {
-  color: #860087;
+  color: #F083F9;
   font-size:0.5rem;
   animation-name: pulse;
   animation-duration: 2s;
@@ -122,12 +122,12 @@
 
 
  .activeQuestTextBox {
-  color: #BDFF00;
+  color: #BBFC00;
   font-size:0.5rem;
   padding:1rem;
   background-color: #3A1D8B;
   width:fit-content;
-  border-color: #BDFF00;
+  border-color: #BBFC00;
   border: 1px dotted;
   border-radius: 9px;
   align-self:center;
@@ -163,8 +163,8 @@
   animation: pulse 1s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  
  }
+
  @media(min-width: 500px) {
   .arrowSvg {
     height: 30px;
@@ -183,12 +183,12 @@
     padding-left:4rem;
     padding-right:4rem;
     font-size: 1rem;
-    color: #3A1D8B;
+    color: #F083F9;
   }
  }
 
 .title {
-    color: #3A1D8B;
+    color: #6900E9;
     font-size: "4rem";
 }
 
@@ -212,7 +212,6 @@ padding: 2rem;
 
 @media(min-width: 400px) {
   .header {
-    color: #3A1D8B;
     font-size: 2.5rem;
     text-align: left;
     position: relative;
@@ -221,7 +220,7 @@ padding: 2rem;
 }
 
 .subheader {
-  color: #3A1D8B;
+  color: #6900E9;
   font-size: 1rem;
   text-align:center;
   font-weight: 300;
