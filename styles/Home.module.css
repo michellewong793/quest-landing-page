@@ -15,47 +15,13 @@
     }
  }
 
-
+ .desktopLogo {
+  height:2rem;
+ }
 .waveImage {
 max-width:100%;
 }
- /** Css for switching mobile and desktop backgrounds at breakpoints for desktop */ 
- .bottomBackground {
-  display: none;
- }
 
- .bottomBackgroundMobile {
-  display: block;
-  position: absolute;
-  bottom: -115rem;
-  width:100%;
- }
-
- @media(min-width:425px){
-  .bottomBackgroundMobile {
-    bottom: -135rem;
-  }
- }
-
- @media(min-width:768px) {
-  .bottomBackground {
-  }
-  .bottomBackgroundMobile {
-    display: none;
-  }
- }
-
- @media(min-width:1024px) {
-  .bottomBackground {
-    bottom: -85rem;    
-  }
- }
-
- @media(min-width:1440px) {
-  .bottomBackground {
-    bottom: -95rem;    
-  }
- }
  .proposalContainer {
   position: relative;
   display: flex;
