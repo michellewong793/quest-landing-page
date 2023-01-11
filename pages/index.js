@@ -36,14 +36,14 @@ export default function Home() {
       <div className={styles.smallFlexColumn}>
       <Link href="#active-quests" className={styles.activeQuestTextBox}>You have (1) active quest!</Link>
       <br/>
-      <Link href="#active-quests" className={styles.activeQuestText}>Start Now</Link>
+      <Link href="#firstQuest" className={styles.activeQuestText}>Start Now</Link>
       <br/>
-      <img src="/down_arrow_purple.svg" className={styles.arrowSvg}/>
+      <img src="/downArrow.svg" className={styles.arrowSvg}/>
       </div>
 
 
     <div className={styles.questBlock}> 
-    <div className={styles.questContainer}>
+    <div className={styles.questContainer} id="firstQuest">
       <QuestCard cardName={cardStyles.teapot} logoImage={"/teapot-logo.svg"} description={"Teapot is an anonymous company review site."} buttonText={"Spill the Tea"}/>
       <QuestCard cardName={cardStyles.comingSoon} logoImage={"/coming-soon.svg"} description={"What will the next quest be? Propose one below."} buttonText={"Propose the next Quest"}/>
     </div>

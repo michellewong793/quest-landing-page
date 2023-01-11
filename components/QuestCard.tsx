@@ -11,14 +11,13 @@ const lexend = Lexend({subsets: ["latin"],weight: "300"})
 
 const QuestCard = ({ cardName, logoImage, description, buttonText}) => {
 
+
   return (
     <div className={cardName}>
         <img src={logoImage} className={styles.logoImage} />
         <p>{description}</p>
         <br />
-        <button className={styles.button}>
-        <a className={lexend.className}>{buttonText}</a>
-        </button>
+        <button className={lexend.className}>{buttonText}</button>
     </div>
   );
 };
