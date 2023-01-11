@@ -51,7 +51,23 @@
  .proposalContainer {
   position: relative;
   bottom:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
  }
+
+ .proposalContainer p {
+  color: white;
+  font-weight: bold;
+ }
+
+ .proposalText {
+  color: #FD39FF;
+  font-size: 2rem;
+ }
+
 
  @media (min-width:1000px) {
   .mobileLogo {
@@ -257,7 +273,7 @@ padding: 2rem;
 }
 
 .subheader {
-  color: #6900E9;
+  color: #3A1D8B;
   font-size: 1rem;
   text-align:center;
   font-weight: 300;

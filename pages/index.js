@@ -51,8 +51,8 @@ export default function Home() {
     </div>
 
     <div className={styles.proposalContainer}>
-      <h3> Submit a Proposal </h3> 
-      <p> Are you looking to crowdsource some data? A business looking to learn more about your customers? A community leader looking for somewhere to host your community online? Submit an inquiry here for evaluation by our team to build with the Quest platform. We are looking to build for and with you.  </p>
+      <h1 className={styles.proposalText}> Submit a Proposal </h1> 
+      <p> Want to learn more about Quest? Inquire here to start building for and with your community, business, or organization. </p>
       <button> Submit Proposal </button>
     </div>
 
