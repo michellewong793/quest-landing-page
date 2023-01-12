@@ -202,31 +202,7 @@
     animation-name: pulse;
     animation-timing-function: jump-start;
   }
-  
-  
-   .activeQuestTextBox {
-    color: #BBFC00;
-    font-size:0.5rem;
-    padding:1rem;
-    background-color: #3A1D8B;
-    width:fit-content;
-    border-color: #BBFC00;
-    border: 1px dotted;
-    border-radius: 9px;
-    align-self:center;
-    line-height: 1rem;
-    animation: example 2s, pulse 1s;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   }
-  
-   @media(min-width: 500px) {
-    .activeQuestTextBox {
-     font-size:1rem;
-     margin-top:6rem;
-    }  
-  
-   }
+
   
    @media(min-width: 1000px) {
     .mobileNavBar {
