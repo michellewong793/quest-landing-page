@@ -25,13 +25,13 @@ export default function Nav() {
         { mobileNavActive ? 
         <div className={styles.mobileNavBarLinkContainer}>        
         <Link href="/about" className={styles.mobileNavBarLink}>About Us</Link>
-        <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={styles.mobileNavBarLink}>Developers</Link>
+        <Link href="https://quest-4.gitbook.io/quest-sdk/" className={styles.mobileNavBarLink}>Developers</Link>
         </div> :  
         <div className={styles.navBar}>
        <Link href="/"><img src="/Quest_Pink_Logo.svg" className={styles.desktopLogo}/></Link>
          <>
         <Link href="/about" className={navLinkClass}>About Us</Link>
-        <Link href="https://docs.google.com/forms/d/1hliBQubckDDBYNfb8zVxJWWqkiDaOwSUantCBI9LrAQ/" className={navLinkClass}>Developers</Link>
+        <Link href="https://quest-4.gitbook.io/quest-sdk/" className={navLinkClass}>Developers</Link>
         </>
       </div>}
 
