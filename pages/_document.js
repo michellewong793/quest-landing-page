@@ -6,6 +6,7 @@ class MyDocument extends Document {
         return { ...initialProps }
     }
 
+    /**Meta Tags for Social Previews */
     render() {
         return (
             <Html>
@@ -15,9 +16,9 @@ class MyDocument extends Document {
                     <meta property="og:type" content="website"/>
                     <meta property="og:image" content="/Quest_Pink_Logo.svg"/>
                     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@ourquest_xyz"/>
-<meta name="twitter:creator" content="@ourquest_xyz"/>
-<meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"></meta>
+                    <meta name="twitter:site" content="@ourquest_xyz"/>
+                    <meta name="twitter:creator" content="@ourquest_xyz"/>
+                    <meta name="twitter:image" content="/Quest_Pink_Logo.svg"></meta>
                 </Head>
                 <body>
                     <Main />
