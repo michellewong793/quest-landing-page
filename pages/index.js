@@ -6,6 +6,9 @@ import styles from "../styles/Home.module.css";
 import QuestCard from "../components/QuestCard";
 import cardStyles from "../styles/QuestCard.module.css";
 
+import { useRouter } from 'next/router'
+
+
 import {Lexend} from '@next/font/google';
 
 
@@ -16,6 +19,8 @@ const lexend = Lexend({
   })
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <>
     <Head>
@@ -52,7 +57,7 @@ export default function Home() {
       <div className={styles.proposalContainer}>
         <h1 className={styles.proposalText}> Submit a Proposal </h1> 
         <p> Intrigued? Inquire here to propose a quest for you and your community, business, or organization. </p>
-        <button className={`${lexend.className} ${styles.proposalButton}`}> Contact Us </button>
+        <button onClick={() => router.push('mailto:team@ourquest.xyz')} className={`${lexend.className} ${styles.proposalButton}`}> Contact Us </button>
       </div>
 
     </div>
