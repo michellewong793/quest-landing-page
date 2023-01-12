@@ -12,7 +12,7 @@ export default function Nav() {
 
       <>
       <div className={styles.mobileNavBarLayout}>
-      <img className={styles.mobileLogo} src="/Quest_Pink_Logo.svg"/>
+      <Link href="/"><img className={styles.mobileLogo} src="/Quest_Pink_Logo.svg"/></Link>
 
         <img
           onClick={() => setNavActive(!mobileNavActive)}
