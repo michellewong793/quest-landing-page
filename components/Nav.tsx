@@ -12,15 +12,13 @@ export default function Nav() {
 
       <>
       <div className={styles.mobileNavBarLayout}>
-      <Link href="/"><img className={styles.mobileLogo} src="/Quest_Pink_Logo.svg"/></Link>
-
+        <Link href="/"><img className={styles.mobileLogo} src="/Quest_Pink_Logo.svg"/></Link>
         <img
           onClick={() => setNavActive(!mobileNavActive)}
           className={styles.mobileNavBar}
-          src={"/hamburger_pink.svg"}
-        >
+          src={"/hamburger_pink.svg"}>
         </img>
-        </div>
+      </div>
 
         { mobileNavActive ? 
         <div className={styles.mobileNavBarLinkContainer}>        
@@ -29,10 +27,10 @@ export default function Nav() {
         </div> :  
         <div className={styles.navBar}>
        <Link href="/"><img src="/Quest_Pink_Logo.svg" className={styles.desktopLogo}/></Link>
-         <>
+         <div className={styles.navLinksContainer}>
         <Link href="/about" className={navLinkClass}>About Us</Link>
         <Link href="https://quest-4.gitbook.io/quest-sdk/" className={navLinkClass}>Developers</Link>
-        </>
+        </div>
       </div>}
 
 
