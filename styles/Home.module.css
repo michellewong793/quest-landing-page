@@ -92,6 +92,10 @@ max-width:100%;
  }
 
 
+ .mobileLogo {
+  height: 2rem;
+ }
+
  @media (min-width:1024px) {
   .mobileLogo {
     display: none;
