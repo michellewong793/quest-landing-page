@@ -15,7 +15,7 @@ export default function Nav() {
         <Link href="/"><img className={styles.mobileLogo} src="/Quest_Pink_Logo.svg"/></Link>
         <img
           onClick={() => setNavActive(!mobileNavActive)}
-          className={styles.mobileNavBar}
+          className={styles.mobileHamburger}
           src={"/hamburger_pink.svg"}>
         </img>
       </div>
@@ -25,6 +25,7 @@ export default function Nav() {
         <Link href="/about" className={styles.mobileNavBarLink}>About Us</Link>
         <Link href="https://quest-4.gitbook.io/quest-sdk/" className={styles.mobileNavBarLink}>Developers</Link>
         </div> :  
+        /** Desktop NavBar  */
         <div className={styles.navBar}>
        <Link href="/"><img src="/Quest_Pink_Logo.svg" className={styles.desktopLogo}/></Link>
          <div className={styles.navLinksContainer}>

@@ -94,6 +94,11 @@ max-width:100%;
  }
 
 
+ .mobileHamburger {
+  width:2rem;
+  height: 2rem;
+ }
+
  .mobileLogo {
   height: 2rem;
  }
@@ -239,7 +244,7 @@ max-width:100%;
  }
 
  @media(min-width: 1000px) {
-  .mobileNavBar {
+  .mobileHamburger {
     display: none;
   }
  }
