@@ -54,7 +54,7 @@ max-width:100%;
 @media(min-width:1024px){
   .proposalContainer p {
     width:50rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 }
 
@@ -84,12 +84,12 @@ max-width:100%;
 
  .proposalText {
   color: #3A1D8B;
-  font-size: 1rem;
+  font-size: 1.5rem;
  }
 
  @media(min-width:1024px){
   .proposalText {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
  }
 
