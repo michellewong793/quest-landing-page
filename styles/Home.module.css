@@ -32,13 +32,13 @@ width:100%;
   padding: 1rem;
   text-align:center;
   margin-bottom: 5rem;
+  font-family: 'Lexend'
  }
 
 
  .proposalContainer p {
   color:indigo;
   font-size: 1rem;
-  font-weight: bold;
   margin-top: 0;
  }
 
@@ -55,7 +55,7 @@ width:100%;
   .proposalContainer p {
     width:50rem;
     font-size: 1.5rem;
-}
+  }
 }
 
 .proposalButton {
@@ -310,6 +310,7 @@ padding: 2rem;
 }
 
 .header {
+  font-family:'Lexend';
   color: #3A1D8B;
   font-size: 1.3rem;
   text-align: center;

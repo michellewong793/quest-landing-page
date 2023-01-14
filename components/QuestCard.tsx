@@ -16,7 +16,7 @@ const QuestCard = ({ cardName, logoImage, description, buttonText}) => {
     <div className={cardName}>
         <img src={logoImage} className={styles.logoImage} />
         <p>{description}</p>
-        <button className={lexend.className}>{buttonText}</button>
+        <button>{buttonText}</button>
     </div>
   );
 };

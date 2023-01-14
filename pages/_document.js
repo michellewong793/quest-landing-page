@@ -19,6 +19,11 @@ class MyDocument extends Document {
                     <meta name="twitter:site" content="@ourquest_xyz"/>
                     <meta name="twitter:creator" content="@ourquest_xyz"/>
                     <meta name="twitter:image" content="/Quest_Pink_Logo.svg"></meta>
+                    <link href="/fonts/style.css" rel="stylesheet"/>
+
+                    {/* <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+<link rel="preload" href="https://fonts.gstatic.com" crossOrigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet"/> */}
                 </Head>
                 <body>
                     <Main />

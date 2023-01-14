@@ -24,7 +24,7 @@ export default function Home() {
     <div className={styles.container}>
      <Nav/>
     <div className={styles.landingContainer}>
-      <h1 className={`${lexend.className} ${styles.header}`}>
+      <h1 className={`${styles.header}`}>
       About Us
       </h1>
       <p className={styles.subheader}>
@@ -39,7 +39,7 @@ export default function Home() {
     We empower existing communities that need better ways of asking for information from each other in real time, with infrastructure for both rewarding contributors and supporting people who need access to information.
     </p>
 
-    <h1 className={`${lexend.className} ${styles.header}`}>
+    <h1 className={` ${styles.header}`}>
       Our Values
       </h1>
       <p> we are inclusive. </p>

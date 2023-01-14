@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import {Press_Start_2P } from '@next/font/google'
 import styles from "../styles/Home.module.css"
 
-const pressPlayFont = Press_Start_2P({ subsets: ['latin'], weight: '400' })
+// const pressPlayFont = Press_Start_2P({ subsets: ['latin'], weight: '400' })
 
 export default function Nav() {
     const [mobileNavActive, setNavActive] = useState(false);
-    const navLinkClass = [pressPlayFont.className,styles.navLink].join(' ')
+    const navLinkClass = [styles.navLink].join(' ')
     return (
 
       <>

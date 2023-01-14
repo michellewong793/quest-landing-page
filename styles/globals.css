@@ -8,6 +8,13 @@ body {
   font-display:swap;
 }
 
+a {
+  font-family: 'Press Start 2P'
+  }
+  p, h1, h2, h3 {
+    font-family: 'Lexend', sans-serif;
+  }
+
 
 a {
   color: inherit;
@@ -22,3 +29,6 @@ a {
   font-weight: bold;
  }
  
+ button {
+  font-family: 'Lexend'
+ }

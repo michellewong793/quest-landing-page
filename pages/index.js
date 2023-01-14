@@ -57,7 +57,7 @@ export default function Home() {
       <div className={styles.proposalContainer}>
         <h1 className={styles.proposalText}> Submit a Proposal </h1> 
         <p> Intrigued? Inquire here to propose a quest for you and your community, business, or organization. </p>
-        <button onClick={() => router.push('mailto:team@ourquest.xyz')} className={`${lexend.className} ${styles.proposalButton}`}> Contact Us </button>
+        <button onClick={() => router.push('mailto:team@ourquest.xyz')} className={` ${styles.proposalButton}`}> Contact Us </button>
       </div>
 
     </div>
