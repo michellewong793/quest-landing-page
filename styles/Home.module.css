@@ -36,7 +36,7 @@ max-width:100%;
 
 
  .proposalContainer p {
-  color:#6900E9;
+  color:indigo;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 0;
@@ -163,6 +163,7 @@ max-width:100%;
 
 .navLink {
   color: #FD39FF;
+  letter-spacing: -1px;
 }
 
  .navLink:hover {
@@ -326,7 +327,7 @@ padding: 2rem;
 }
 
 .subheader {
-  color: #6900E9;
+  color: indigo;
   font-size: 1rem;
   text-align:center;
   font-weight: 300;

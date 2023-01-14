@@ -148,6 +148,7 @@
   
   .navLink {
     color: #FD39FF;
+    letter-spacing: -1px;
   }
   
    .navLink:hover {
