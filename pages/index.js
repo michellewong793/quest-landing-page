@@ -9,13 +9,24 @@ import cardStyles from "../styles/QuestCard.module.css";
 import { useRouter } from 'next/router'
 
 
-import {Lexend} from '@next/font/google';
+import {Lexend, Lato} from '@next/font/google';
 
 
 
 // If loading a variable font, you don't need to specify the font weight
 const lexend = Lexend({
    subsets: ['latin'],
+  })
+
+  const lato = Lato({
+    subsets: ['latin'],
+    weight: ["300", "400", "700", "900"],
+  })
+
+
+  const latoBold = Lato({
+    subsets: ['latin'],
+    weight: ["700", "900"],
   })
 
 export default function Home() {
@@ -33,10 +44,15 @@ export default function Home() {
      <Nav/>
     <div className={styles.landingContainer}>
       <h1 className={`${lexend.className} ${styles.header}`}>
-      Community-driven crowdsourcing and monetization of data. 
+      Identity is complex. 
       </h1>
-      <p className={styles.subheader}>
-    We build technology to empower communities to leverage and monetize their data together.     </p>
+      <h1 className={`${lexend.className} ${styles.header2}`}>
+      but auth shouldn&apos;t be.
+      </h1>
+      {/* <p className={`${lato.className} ${styles.subheader}`}>
+One account to unlock them all. </p> */}
+  <p className={`${lato.className} ${styles.subheader}`}>Quest is the first social platfrom built with Zero Knowledge Proofs.</p>
+  <p className={`${lato.className} ${styles.subheader}`}>So you can be yourself in all communities.</p>
 
       <br/>
       <div className={styles.smallFlexColumn}>
