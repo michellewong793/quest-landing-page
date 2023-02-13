@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,user-scalable=no" />
     <title>3D Carousel</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uov6xbj.css">
     <style>
+
+      @font-face {
+  font-family: rubik;
+  src: url("rubik.ttf");
+}
+
+      
       * {
         margin: 0;
         padding: 0;
@@ -100,6 +108,35 @@
         left: 0;
       }
 
+      #header-container {
+        position: absolute;
+        top: 3rem;
+        width: 100%;
+      }
+
+      #header {
+        color: white;
+        text-align: center;
+        font-family: rubik;
+        font-size: 2rem;
+      }
+
+      
+      @media (min-width: 760px) {
+        #header-container {
+        top: 5rem;
+        width: 100%;
+      }
+        
+        #header {
+        font-size: 3rem;
+        font-family: rubik;
+        filter: drop-shadow(0 0.2rem 0.1rem #FF00FF);
+      }
+       
+      }
+        
+      
       @-webkit-keyframes spin {
         from {
           -webkit-transform: rotateY(0deg);
@@ -155,10 +192,7 @@
           alt=""
         />
       
-        <img
-          src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt=""
-        />
+        <img src="/html/dulyNutted.png"          alt=""/>
         <img
           src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           alt=""
@@ -187,12 +221,14 @@
         </video>
 
         <!-- Text at center of ground -->
-        <p>3D Tiktok Carousel</p>
       </div>
       <div id="ground"></div>
     </div>
 
     <div id="music-container"></div>
+    <div id="header-container"> 
+      <div id="header">The future of social is here</div>
+    </div>
 
     <!-- github corner (https://github.com/tholman/github-corners) -->
     </style>
@@ -208,7 +244,7 @@
       // Link of background music - set 'null' if you dont want to play background music
       var bgMusicURL =
         "https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a";
-      var bgMusicControls = true; // Show UI music control
+      var bgMusicControls = false; // Show UI music control
 
       /*
      NOTE:
